@@ -35,5 +35,9 @@
   },
   "devDependencies": {
     "cypress": "^4.9.0"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/viktorsommar/cooper_client.git",
+  "author": "viktor_sommar <vsommarbaillot@gmail.com>",
+  "license": "MIT"
 }
