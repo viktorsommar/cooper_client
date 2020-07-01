@@ -34,7 +34,9 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^4.9.0"
+    "cypress": "^4.9.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2"
   },
   "main": "index.js",
   "repository": "https://github.com/viktorsommar/cooper_client.git",
