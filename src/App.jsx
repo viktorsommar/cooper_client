@@ -36,7 +36,7 @@ class App extends Component {
     let renderLogin;
     switch(true) {
       case renderLoginForm && !authenticated:
-        renderLogin = <LoginForm submitFormHandler={this.onLogin} />
+        renderLogin = <LoginForm submitFormHandler={this.onLogin} />;
         break;
       case !renderLoginForm && !authenticated:
         renderLogin = (
@@ -47,13 +47,13 @@ class App extends Component {
             >
               Login
             </button>
-            <p>{message}</p>
+            <p id="message">{message}</p>
           </>
         );
         break;
       case authenticated:
         renderLogin = (
-          <p>Hi {JSON.parse(sessionStorage.getItem("credentials")).uid}</p>
+          <p id="message">Hi {JSON.parse(sessionStorage.getItem("credentials")).uid}</p>
         );
         break;
     }
@@ -61,8 +61,7 @@ class App extends Component {
     return (
       <>
       <InputFields onChangeHandler={this.onChangeHandler} />
-      <button id="login">Login</button>
-      <LoginForm />
+      {renderLogin}
         <DisplayCooperResult
           distance={this.state.distance}
           gender={this.state.gender}

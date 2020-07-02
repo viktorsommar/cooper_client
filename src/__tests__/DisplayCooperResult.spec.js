@@ -14,7 +14,6 @@ describe("<DisplayCooperResult />", () => {
 
     it("and returns the assessment", () => {
       expect(describedComponent.find("p#cooper-result").text()).toEqual("Result: Poor");
-      debugger
     });
 
     it("and returns the data user put in", () => {
