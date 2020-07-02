@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { saveData } from "../modules/performanceData";
+import { getData } from "../modules/performanceData";
 
 class DisplayPerformanceData extends Component {
   state = {
@@ -11,7 +11,7 @@ class DisplayPerformanceData extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.updateIndex != prevProps.updateIndex) {
+    if (this.props.updateIndex !== prevProps.updateIndex) {
       this.getPerformanceData()
     }
   }
