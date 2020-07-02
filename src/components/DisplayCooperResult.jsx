@@ -12,11 +12,11 @@ const DisplayCooperResult = ({
   entrySaved, 
   entryHandler 
 }) => {
-  const result = coopercalculator(distance, gender, age);
+  const result = cooperCalculator(distance, gender, age);
 
 
 const propsPassed = distance && age ? true : false;
-
+debugger
   return (
     <>
       {propsPassed && (
@@ -24,14 +24,14 @@ const propsPassed = distance && age ? true : false;
           <p id="cooper-message">
             {age} y/o {gender} running {distance} meters.
           </p>
-          <p id="cooper-result">Result: {calculate()}</p>
+          <p id="cooper-result">Result: {result}</p>
           {authenticated && !entrySaved ? (
             <button
-            id="=save-result"
-            onClick={() => daveData(result, entryHandler)}
+            id="save-result"
+            onClick={() => saveData(result, entryHandler)}
             >
               Save entry
-              </button>
+            </button>
           ) : (
             <p id="response-message">Your entry was saved</p>
           )}
@@ -40,5 +40,4 @@ const propsPassed = distance && age ? true : false;
     </>
   );
 };
-
 export default DisplayCooperResult;

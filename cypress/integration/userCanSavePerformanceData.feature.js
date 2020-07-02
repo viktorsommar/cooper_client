@@ -20,7 +20,7 @@ describe("User attempts save data", () => {
     cy.visit("/");
 
     cy.get("#login").click();
-    cy.get("#login-for").whitin(() => {
+    cy.get("#login-form").within(() => {
       cy.get("#email").type("user@mail.com");
       cy.get("#password").type("password");
       cy.get('button').contains('Submit').click()
@@ -29,7 +29,7 @@ describe("User attempts save data", () => {
 
   it("successfully", () => {
     cy.get("input#distance").type("1000");
-    cy.get("select#gender").select("femail");
+    cy.get("select#gender").select("female");
     cy.get("input#age").type("23");
     cy.get("#save-result").click();
     cy.get("#response-message").should("contain", "Your entry was saved")

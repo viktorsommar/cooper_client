@@ -38,6 +38,6 @@ cy.visit("/");
       cy.get("#password").type("wrongpassword");
       cy.get('button').contains('Submit').click()
     });
-    Cy.get("#message").should("contain", "Invalid login credentials. Please try again.");
+    cy.get("#message").should("contain", "Invalid login credentials. Please try again.");
   });
 });
