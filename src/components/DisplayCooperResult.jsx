@@ -1,7 +1,7 @@
 import React from "react";
 
 import cooperCalculator from "../modules/cooperCalculator"
-import saveData from "../modules/performanceData";
+import { saveData } from "../modules/performanceData";
 
 
 const DisplayCooperResult = ({ 
@@ -16,7 +16,7 @@ const DisplayCooperResult = ({
 
 
 const propsPassed = distance && age ? true : false;
-debugger
+
   return (
     <>
       {propsPassed && (
@@ -27,8 +27,8 @@ debugger
           <p id="cooper-result">Result: {result}</p>
           {authenticated && !entrySaved ? (
             <button
-            id="save-result"
-            onClick={() => saveData(result, entryHandler)}
+              id="save-result"
+              onClick={() => saveData(result, entryHandler)}
             >
               Save entry
             </button>

@@ -23,4 +23,4 @@ const saveData = async (result, entryHandler) => {
   }
 };
 
-export default { saveData };
+export { saveData };
