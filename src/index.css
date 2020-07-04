@@ -11,10 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: grayscale;
-}
+
 
 @media only screen and (min-width: 768px) {
   .ui.container {
@@ -22,14 +19,6 @@ body {
     max-width: 700px;
   }
 
-  nav.ui.container .ui.header {
-    float: left;
-    margin-top: 12px;
-  }
-
-  nav.ui.container .ui.inverted.compact.menu {
-    float: right;
-  }
 }
 
 .ui.inverted.vertical.center.aligned.segment {
@@ -67,7 +56,7 @@ nav.ui.container .ui.inverted.compact.menu .active.item {
 }
 
 .ui.content.container {
-  height: 300px;
+  height: 500px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -87,14 +76,6 @@ nav.ui.container .ui.inverted.compact.menu .active.item {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.ui.inverted.vertical.segment footer.ui.segment {
-  height: 80px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  color: gray;
-}
-
-.ui.inverted.vertical.segment footer.ui.segment a {
-  color: white;
+form a {
+  color: white
 }
