@@ -77,6 +77,12 @@ class App extends Component {
       }
 
     return (
+      <div class="ui inverted vertical center aligned segment">
+        <div class="ui content container">
+        <h1 class="ui inverted header">Take the Cooper Test!</h1>
+        <p>
+        The Cooper test is a test of physical fitness. It was designed by Kenneth H. Cooper in 1968 for US military use. In the original form, the point of the test is to run as far as possible within 12 minutes.
+        </p>
       <>
       <InputFields onChangeHandler={this.onChangeHandler} />
       {renderLogin}
@@ -90,6 +96,8 @@ class App extends Component {
     />
         {performanceDataIndex}
       </>
+    </div>
+    </div>
     );
   }
 }

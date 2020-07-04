@@ -1,8 +1,10 @@
 import React from "react";
+import { Form } from "semantic-ui-react";
 
 const InputFields = ({ onChangeHandler }) => {
   return (
-    <>
+    <Form>
+      <Form.Group widths='equal'>
     <lable>Distance</lable>
     <input onChange={onChangeHandler} name="distance" id="distance"></input>
 
@@ -13,7 +15,8 @@ const InputFields = ({ onChangeHandler }) => {
 
     <label>Age</label>
     <input onChange={onChangeHandler} name="age" id="age"></input>
-    </>
+    </Form.Group>
+    </Form>
   );
 };
 
