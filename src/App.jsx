@@ -4,6 +4,7 @@ import InputFields from './components/InputFields';
 import LoginForm from "./components/LoginForm";
 import { authenticate } from "./modules/auth";
 import DisplayPerformanceData from "./components/DisplayPerformanceData"
+import { Button } from "semantic-ui-react";
 
 class App extends Component {
   state = {
@@ -45,12 +46,12 @@ class App extends Component {
       case !renderLoginForm && !authenticated:
         renderLogin = (
           <>
-            <button
+            <Button
               id="login"
               onClick={() => this.setState({ renderLoginForm: true })}
             >
               Login
-            </button>
+            </Button>
             <p id="message">{message}</p>
           </>
         );
