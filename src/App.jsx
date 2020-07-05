@@ -79,6 +79,13 @@ class App extends Component {
 
     return (
       <div class="ui inverted vertical center aligned segment">
+        <nav class="ui container">
+        <h1 class="ui inverted header">Cover</h1>
+        <div class="ui borderless inverted compact menu">
+          <a class="active item">Cooper Test</a> <a class="item">BMI Calculator</a>
+          <a class="item">Sign Up</a>
+        </div>
+      </nav>
         <div class="ui content container">
         <h1 class="ui inverted header">Take the Cooper Test!</h1>
         <p>
