@@ -42,7 +42,6 @@ class DisplayPerformanceData extends Component {
         datasets: [{
           data: distances,
           label: "Saved distance",
-          fill: true,
         }]
       }
       dataIndex = (
