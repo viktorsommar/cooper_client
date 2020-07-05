@@ -12,12 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-body {
-        -webkit-font-smoothing: antialiased;
-        -moz-font-smoothing: grayscale;
-      }
 
-      @media only screen and (min-width: 768px) {
         .ui.container {
           width: 700px;
           max-width: 700px;
@@ -31,7 +26,6 @@ body {
         nav.ui.container .ui.inverted.compact.menu {
           float: right;
         }
-      }
 
       .ui.inverted.vertical.center.aligned.segment {
         padding-top: 36px;
