@@ -42,6 +42,9 @@ class DisplayPerformanceData extends Component {
         datasets: [{
           data: distances,
           label: "Saved distance",
+          borderColor: "white",
+          pointBorderColor: "white",
+          pointBackgroundColor: "black"
         }]
       }
       dataIndex = (
