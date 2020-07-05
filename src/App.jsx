@@ -5,8 +5,6 @@ import LoginForm from "./components/LoginForm";
 import { authenticate } from "./modules/auth";
 import DisplayPerformanceData from "./components/DisplayPerformanceData"
 import { Button } from "semantic-ui-react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import BMICalculator from "./BMICalculator";
 import { Icon } from "semantic-ui-react";
 
 class App extends Component {
@@ -80,7 +78,7 @@ class App extends Component {
         }
       }
 
-    return (<Router>
+    return (
       <div class="ui inverted vertical center aligned segment">
         <nav class="ui container">
         <Icon name="chart area icon" size='huge'></Icon>
@@ -109,7 +107,7 @@ class App extends Component {
         {performanceDataIndex}
       </>
     </div>
-    </div></Router>
+    </div>
     );
   }
 }
