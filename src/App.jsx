@@ -83,9 +83,9 @@ class App extends Component {
         <nav class="ui container">
         <Icon name="chart area icon" size='huge'></Icon>
         <div class="ui borderless inverted compact menu">
-          <a class="active item">Cooper Test</a> 
-          <a class="item">BMI Calculator</a>
-          <a class="item">Sign Up</a>
+          <Button class="active item">Cooper Test</Button> 
+          <Button class="item">BMI Calculator</Button>
+          <Button class="item">Sign Up</Button>
         </div>
       </nav>
         <div class="ui content container">
