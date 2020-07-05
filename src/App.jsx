@@ -82,7 +82,8 @@ class App extends Component {
         <nav class="ui container">
         <h1 class="ui inverted header">Cover</h1>
         <div class="ui borderless inverted compact menu">
-          <a class="active item">Cooper Test</a> <a class="item">BMI Calculator</a>
+          <a class="active item">Cooper Test</a> 
+          <a class="item">BMI Calculator</a>
           <a class="item">Sign Up</a>
         </div>
       </nav>
